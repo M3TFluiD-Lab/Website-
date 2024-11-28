@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-item img,
+.carousel-item video {
+  width: 100%;
+  /* Ensures the image/video spans the container */
+  height: auto;
+  /* Maintains aspect ratio */
+  object-fit: cover;
+  /* Ensures content fills the container while cropping excess */
+  aspect-ratio: 16/9;
+  /* Enforces uniform aspect ratio */
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 525px;
+  /* Sets consistent width */
+  height: 344px;
+  /* Sets consistent height */
+  overflow: hidden;
+  /* Prevents content overflow */
+}
