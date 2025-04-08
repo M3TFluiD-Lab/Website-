@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
+  <!-- Update this path if your favicon folder isn't at the root -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"> -->
+  <!-- Uncomment and adjust these if you have additional favicon assets -->
+  <!--
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  -->
+  <!-- The manifest file is expected at the output root (usually copied from public/) -->
   <link rel="manifest" href="site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Portfolio Showcase</title>
   <script src="https://kit.fontawesome.com/dcaf69cdd3.js" crossorigin="anonymous"></script>
-  <!-- Add the slick-theme.css if you want default styling -->
+  <!-- External CSS from Slick -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
-
 <body class="w-full mx-auto dark:bg-gray-900 relative">
   <div id="root"></div>
+  
+  <!-- Use relative path for local module; it will resolve to <your-deployment-root>/src/main.jsx -->
   <script type="module" src="src/main.jsx"></script>
-  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
+  
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </body>
-
 </html>
